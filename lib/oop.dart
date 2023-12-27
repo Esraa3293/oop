@@ -47,7 +47,11 @@ class BMW extends Car {
 }
 
 class Audi extends Car {
-  Audi({required super.type, required super.price, required super.speed});
+  Audi(
+      {required super.type,
+      required super.price,
+      required super.speed,
+      super.numOfDoors});
 
   @override
   void carPrice() {
@@ -57,7 +61,11 @@ class Audi extends Car {
 }
 
 class Jeep extends Car {
-  Jeep({required super.type, required super.price, required super.speed});
+  Jeep(
+      {required super.type,
+      required super.price,
+      required super.speed,
+      super.numOfDoors});
 
   String maxSpeed() {
     if (speed == 400) {
